@@ -1,16 +1,16 @@
 const vm = new Vue({
     el: 'main',
     data:  {
-        lim_preguntas: 2,
+        preguntas_de_usuario: 9,
+        preguntas:{
         preguntas: {
-        	pregunta: 'pregunta 1',
+        	pregunta1: 'pregunta 1',
         	descripcion: 'estas en una pregunta',
-        }
-
-        preguntas: {
-        	pregunta: 'pregunta 1',
-        	descripcion: 'estas en una pregunta',
-        }
-    }
+        },
+        pregunta2: {
+        	pregunta2: 'pregunta2',
+        	descripcion: 'pregunta sobre fisica',
+        },
+    },
     },
 });

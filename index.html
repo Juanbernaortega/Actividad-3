@@ -10,15 +10,15 @@
 
 <body>
     <main>
-        <h1 v-if="lim_preguntas > 5">Se exedido el numero de preguntas</h1>
+        <h1 v-if="preguntas_de_usuario > 11">Se exedido el numero de preguntas</h1>
 
-        <template v-if="lim_preguntas < 5" :preguntas="preguntas">
+        <template v-if="preguntas_de_usuario < 10" v-for="preguntas in preguntas">
             <h1>{{ preguntas }}</h1>
         </template>
-             <pre>{{ $data }}</pre>
+        <pre>{{ $data }}</pre>
     </main>
     <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
